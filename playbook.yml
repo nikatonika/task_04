@@ -1,0 +1,8 @@
+---
+- name: Create a file with Ansible
+  hosts: localhost
+  tasks:
+    - name: Create a file with content
+      copy:
+        dest: /tmp/ansible_created.txt
+        content: "Hello Ansible"
